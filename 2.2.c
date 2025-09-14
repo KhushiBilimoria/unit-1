@@ -1,27 +1,32 @@
 #include<stdio.h>
-int main()
+int main ()
 { 
     int p,q,r;
-    printf("Enter three values:");
+    printf("enter three numbers");
     scanf("%d%d%d",&p,&q,&r);
-    if(p>q>r){
-        printf("The largest number is: %d\n",p);
-        printf("The smallest number is: %d\n",r);
-    }else if("p>r>q"){
-        printf("The largest number is: %d\n",p);
-        printf("The smallest number is: %d\n",q);
-    }else if("q>p>r"){
-        printf("The largest number is: %d\n",q);   
-        printf("The smallest number is: %d\n",r);
-    }else if("q>r>p"){          
-        printf("The largest number is: %d\n",q);
-        printf("The smallest number is: %d\n",p);  
-    }else if("r>p>q"){   
-        printf("The largest number is: %d\n",r);
-        printf("The smallest number is: %d\n",q);
-    }else if("r>q>p"){
-        printf("The largest number is: %d\n",r);
-        printf("The smallest number is: %d\n",p);
+    if(p>q && p>r)
+    {
+        printf("%d is the largest number",p);
+    }
+    else if(q>p && q>r)
+    {
+        printf("%d is the largest number",q);
+    }
+    else
+    {
+        printf("%d is the largest number",r);
+    }
+    if(p<q && p<r)
+    {
+        printf("\n%d is the smallest number",p);
+    }
+    else if(q<p && q<r)
+    {
+        printf("\n%d is the smallest number",q);
+    }
+    else
+    {
+        printf("\n%d is the smallest number",r);
     }
     return 0;
 }
